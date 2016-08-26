@@ -1,0 +1,27 @@
+{
+  "name": "grunt-wp-cli",
+  "version": "0.0.1",
+  "description": "Grunt wrapper for wp-cli",
+  "main": "tasks/wp-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otavanopisto/grunt-wp-cli.git"
+  },
+  "keywords": [
+    "grunt",
+    "wp-cli"
+  ],
+  "author": "Otavan Opisto <ratkaisutiimi@otavanopisto.fi>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/otavanopisto/grunt-wp-cli/issues"
+  },
+  "homepage": "https://github.com/otavanopisto/grunt-wp-cli#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "wp-cli": "0.0.5"
+  }
+}
