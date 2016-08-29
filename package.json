@@ -1,6 +1,6 @@
 {
   "name": "grunt-wp-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grunt wrapper for wp-cli",
   "main": "tasks/wp-cli.js",
   "scripts": {

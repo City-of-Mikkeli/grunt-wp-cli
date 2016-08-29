@@ -25,7 +25,12 @@
       WP.discover({path:this.data.path}, function(wp) {
         var command = wp[this.data.command];
         if (command) {
-          var subcommand = command[this.data.subcommand];
+          var subcommandNames = this.data.subcommand.split(' ');
+          var subcommand = command[subcommandNames[0]];
+          for (var i = 1, l = subcommandNames.length; i < l; i++) {
+            subcommand = subcommand[subcommandNames[1]];
+          }
+         
           if ((typeof subcommand) === 'function') {
             var subcommandArgs = [];
             
@@ -49,7 +54,7 @@
             
             subcommand.apply(global, subcommandArgs);
           } else {
-            grunt.log.error("Subcommand is invalid");
+            grunt.log.error("Subcommand is invalid.");
             done(false);
           }
 
